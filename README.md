@@ -17,20 +17,20 @@
 
 
 
-## Introduction
+## Introduction :memo:
 Data Structures & Algorithms are fundmental parts of Computer Science. Having good DS & Algo knowledge is a must for any developer. You can never learn all the Data Structures and all the Algorithms in the world, there's no end to it. In this repo, I'll be storing the solutions to all the Data Structure & Algorithm related problems I'll be learning. 
 
 :star2: Star it,
 :fork_and_knife:Fork it,
 :handshake: Contribute to it!
 
-### Data Structure
+### Data Structures :book:
 A Data Structure is a way of organizing data in simple terms. It gives us access to storing, accessing and manipulating data in an efficient manner.
 
-### Algorithms
+### Algorithms :book:
 An algorithm is a set of instructions designed for accomplishing any particular task. We can perform the same task using multiple algorithms, and I'll try to include all possible solution approaches that I can come up with, for a certain problem. 
 
-## Languages
+## Languages 
 For now, I'll be writing codes in C++ only. You can contribute codes in other languages as well. 
 
 ## Running codes
