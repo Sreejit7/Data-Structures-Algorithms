@@ -35,3 +35,6 @@ For now, I'll be writing codes in C++ only. You can contribute codes in other la
 
 ## Running codes
 For running C++ codes, you need to download GNU/G++ environment in your system.
+
+## Contributing :handshake:
+For contributing to this repo, please follow the [contribution guidelines](https://github.com/Sreejit7/Data-Structures-Algorithms/blob/master/CONTRIBUTING.md)
