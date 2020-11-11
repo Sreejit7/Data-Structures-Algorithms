@@ -62,7 +62,42 @@ vector <char> buildSequence(vector<vector<vector<int>>> lcs){
 	}
 	return res;
 }
-
+//Approach 3: O(nm) time, O(nm) space
+vector <char> buildSequence2(vector<vector<int>> lengths, string str);
+vector<char> longestCommonSubsequence(string str1, string str2) {
+	int m = str1.length(), n = str2.length();
+  	vector<vector<int>> lengths(m + 1, vector <int> (n + 1, 0));
+	for(int i = 1; i <= m; i++){
+		for(int j = 1; j <= n; j++){
+			if(str1[i - 1] == str2[j - 1]){
+				lengths[i][j] = lengths[i-1][j-1] + 1;
+			}
+			else{
+				int r = lengths[i][j - 1];
+				int c = lengths[i - 1][j];
+				lengths[i][j] = max(r,c);
+			}
+		}
+	}
+  return buildSequence2(lengths,str1);
+}
+vector <char> buildSequence2(vector<vector<int>> lengths, string str){
+	vector <char> res;
+	int i = lengths.size() - 1, j = lengths[0].size() - 1;
+	while(i!= 0 && j!= 0){
+		if(lengths[i-1][j] == lengths[i][j]){
+			i--;
+		}
+		else if(lengths[i][j-1] == lengths[i][j]){
+			j--;
+		}
+		else{
+			res.insert(res.begin(),str[i-1]);
+			i--; j--;
+		}
+	}
+	return res;
+}
 int main(){
     string str1, str2;
     cin>> str1>> str2;
