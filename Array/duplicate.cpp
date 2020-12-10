@@ -42,7 +42,7 @@ int findDuplicate3(vector<int>& nums) {
   return -1;
 }
 //Approach: Floyd's hare and tortoise, O(n) time
-int findDuplicate(vector<int>& nums) {
+int findDuplicate4(vector<int>& nums) {
   int hare = nums[0] , tortoise = nums[0];
   do{
     hare = nums[nums[hare]];
@@ -55,4 +55,15 @@ int findDuplicate(vector<int>& nums) {
     tortoise = nums[tortoise];
   }
   return hare;
+}
+int main(){
+  vector <int> nums;
+  int n;
+  cin>>n;
+  nums.resize(n + 1);
+  for(int i = 1; i < n; i++){
+    cin>> nums[i];
+  }
+  vector <int> res(nums.begin() + 1, nums.end());
+  cout<<findDuplicate4(res)<<"\n";
 }
