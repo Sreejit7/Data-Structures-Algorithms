@@ -110,4 +110,4 @@ Node* connect(Node* root) {
 }
 
 // Time complexity: O(N) where N = Number of nodes in the Binary Tree, as we traverse through all the nodes once.
-// Space complexity: O(log(N)) where N = Number of nodes in the Binary Tree, as we traverse through all the nodes once.
+// Space complexity: O(log(N)) where N = Number of nodes in the Binary Tree & log(N) is the depth of the tree, as it's the average size of the recursion call stack.
